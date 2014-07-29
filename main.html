@@ -1,0 +1,20 @@
+<html ng-app="myApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <div>
+      <div ng-controller="AppCtrl"> 
+          <div ng-repeat-start="book in library">
+              <img ng-src="{{book.img}}"></img>
+          </div>
+          <div ng-repeat-end>
+              <h4>{{book.name}}</h4>
+              <p>{{book.blurb}}</p>
+          </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
